@@ -33,7 +33,18 @@ export class RecipeService{
             new Ingredient('Peppers',2),
             new Ingredient('Onions',2),
             new Ingredient('Goat meat',1)
+        ]),
+        new Recipe('Ampesi and Abomu','Special Ghanaian boiled yam, cocoyam and asanka grined kontomre with dried salted fish','https://i.pinimg.com/236x/84/bd/59/84bd5919863f375ef63cb0a09e14719f.jpg',[
+            new Ingredient('Onion',1),
+            new Ingredient('Paml oil or cooking oil', 1),
+            new Ingredient('Fresh tomatoes',2),
+            new Ingredient('Peppers',3),
+            new Ingredient('Pear',1),
+            new Ingredient('Yam',1),
+            new Ingredient('Plantain',1),
+            new Ingredient('Salted Fish',1)
         ])
+
     ];
 
     constructor(private shoppingService: ShoppingService){
