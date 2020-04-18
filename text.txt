@@ -1,0 +1,4 @@
+@Viewchild(objectname,{static: false})
+@Input recieve inputs from parent component
+@Output emits an event
+nativeElement

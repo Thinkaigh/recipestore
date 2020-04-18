@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+          <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+        </button>
+        <a routerLink="/" class="navbar-brand">Recipe Book</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
+        <li routerLinkActive="active"><a routerLink="/shopping">Shopping List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDowndropDirectives>
+          <a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown" 
+            role="button" aria-haspopup="true" aria-expanded="false">
+            Manage Data<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a>Save Date</a></li>
+            <li><a>Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
